@@ -1,7 +1,7 @@
 FROM node:14
 WORKDIR /usr/src/calc
 COPY package*.json ./
-run npm install prettier -g
+RUN npm install prettier -g
 RUN npm install
 COPY . .
 RUN npm run build
