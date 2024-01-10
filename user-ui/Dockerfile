@@ -1,4 +1,4 @@
-FROM node:17
+FROM node:14
 WORKDIR /usr/src/calc
 COPY package*.json ./
 RUN npm install
